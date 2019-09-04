@@ -14,11 +14,9 @@ import java.util.Date;
 public class User implements Serializable {
     private Integer userId;     //用户主键
     private String userName;    //用户姓名
-    private Date birth;
-    private String account;   //用户名
+    private String loginName;   //用户名
     private String password;    //密码
     private Integer gender;     //性别
-    private Date birth;//出生日期
 
     public User(){}
     public User(Integer userId,String userName,Integer gender){
