@@ -1,6 +1,6 @@
 package com.ly.base.controller;
 
-import com.cafuc.ssm.base.util.StateParameter;
+import com.ly.base.util.StateParameter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ui.ModelMap;

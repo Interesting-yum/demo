@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @author ly
@@ -37,15 +38,18 @@ public class UserCon {
         return userService.add(user);
     }
 
-    @PostMapping("/test/get-user-info")
-    public List<UserVO> getUserInfo(){
+    @PostMapping("/test")
+    public void getUserInfo(){
         List<User> userList = userService.getAll();
-        Map<Integer, User> collect = userList.stream().collect(Collectors.toMap(User::getUserId,x->x));
-        return userList.stream().map(v->{
-            UserVO vo = new UserVO();
-            vo = JSON.parseObject(JSON.toJSONString(v),UserVO.class);
-            vo.setSex(GenderEnum.getDescByName(v.getGender()));
-            return vo;
-        }).collect(Collectors.toList());
+        String s = userList.stream().filter(user -> user.getUserName().contains("云")).toString();
+        System.out.println(s);
+
+//        Map<Integer, User> collect = userList.stream().collect(Collectors.toMap(User::getUserId,x->x));
+//        return userList.stream().map(v->{
+//            UserVO vo = new UserVO();
+//            vo = JSON.parseObject(JSON.toJSONString(v),UserVO.class);
+//            vo.setSex(GenderEnum.getDescByName(v.getGender()));
+//            return vo;
+//        }).collect(Collectors.toList());
     }
 }

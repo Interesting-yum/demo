@@ -1,6 +1,6 @@
 package com.ly.mapper;
 
-import com.cafuc.ssm.entity.User;
+import com.ly.entity.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

@@ -1,10 +1,10 @@
 package com.ly.controller;
 
-import com.cafuc.ssm.base.controller.BaseController;
-import com.cafuc.ssm.base.util.RedisConstants;
-import com.cafuc.ssm.entity.User;
-import com.cafuc.ssm.base.util.RedisUtil;
-import com.cafuc.ssm.base.util.StateParameter;
+import com.ly.base.controller.BaseController;
+import com.ly.base.util.RedisConstants;
+import com.ly.base.util.RedisUtil;
+import com.ly.base.util.StateParameter;
+import com.ly.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

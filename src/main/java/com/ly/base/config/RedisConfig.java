@@ -1,7 +1,7 @@
 package com.ly.base.config;
 
-import com.cafuc.ssm.base.util.FastJson2JsonRedisSerializer;
-import com.cafuc.ssm.base.util.RedisTemplate;
+import com.ly.base.util.FastJson2JsonRedisSerializer;
+import com.ly.base.util.RedisTemplate;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

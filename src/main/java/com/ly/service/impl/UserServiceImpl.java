@@ -1,8 +1,8 @@
 package com.ly.service.impl;
 
-import com.cafuc.ssm.mapper.UserMapper;
-import com.cafuc.ssm.service.UserService;
-import com.cafuc.ssm.entity.User;
+import com.ly.entity.User;
+import com.ly.mapper.UserMapper;
+import com.ly.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
